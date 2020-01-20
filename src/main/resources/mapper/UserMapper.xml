@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jclz.fruit.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.jclz.fruit.entity.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="account" jdbcType="VARCHAR" property="account" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
+    <result column="vip_out_time" jdbcType="VARCHAR" property="vipOutTime" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+    <result column="vip_time" jdbcType="VARCHAR" property="vipTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, account, role_id, vip_out_time, create_time,vip_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.jclz.fruit.entity.User" keyProperty="id"
+          useGeneratedKeys="true">
+    insert into user (id, account, role_id, 
+      vip_out_time, create_time,vip_time)
+    values (#{id,jdbcType=INTEGER}, #{account,jdbcType=VARCHAR}, #{roleId,jdbcType=INTEGER}, 
+      #{vipOutTime,jdbcType=VARCHAR}, #{createTime,jdbcType=VARCHAR}, #{vipTime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.jclz.fruit.entity.User" keyProperty="id"
+          useGeneratedKeys="true" keyColumn="id">
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="account != null">
+        account,
+      </if>
+      <if test="roleId != null">
+        role_id,
+      </if>
+      <if test="vipOutTime != null">
+        vip_out_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+        <if test="vipTime != null">
+            vip_time,
+        </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="account != null">
+        #{account,jdbcType=VARCHAR},
+      </if>
+      <if test="roleId != null">
+        #{roleId,jdbcType=INTEGER},
+      </if>
+      <if test="vipOutTime != null">
+        #{vipOutTime,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=VARCHAR},
+      </if>
+        <if test="vipTime != null">
+            #{vipTime,jdbcType=VARCHAR},
+        </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jclz.fruit.entity.User">
+    update user
+    <set>
+      <if test="account != null">
+        account = #{account,jdbcType=VARCHAR},
+      </if>
+      <if test="roleId != null">
+        role_id = #{roleId,jdbcType=INTEGER},
+      </if>
+      <if test="vipOutTime != null">
+        vip_out_time = #{vipOutTime,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=VARCHAR},
+      </if>
+        <if test="vipTime != null">
+            vip_time = #{vipTime,jdbcType=VARCHAR},
+        </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jclz.fruit.entity.User">
+    update user
+    set account = #{account,jdbcType=VARCHAR},
+      role_id = #{roleId,jdbcType=INTEGER},
+      vip_out_time = #{vipOutTime,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=VARCHAR},
+      vip_time = #{vipTime,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+    <select id="selectByPhone" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from user
+        where account = #{phone,jdbcType=VARCHAR}
+    </select>
+    <update id="removeVip" parameterType="java.lang.Integer">
+        update user set
+        role_id = 0
+        where
+        id = #{id,jdbcType=INTEGER}
+    </update>
+    <!-- 更新会员状态 -->
+    <update id="updateVip" parameterType="com.jclz.fruit.entity.User">
+        update user set
+        vip_out_time = #{vipOutTime,jdbcType=VARCHAR},
+        role_id = #{roleId,jdbcType = VARCHAR},
+        vip_time = #{vipTime,jdbcType=VARCHAR}
+        where
+        id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

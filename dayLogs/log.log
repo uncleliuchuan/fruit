@@ -1,0 +1,54 @@
+2020-01-11 14:02:01 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信签名是：02F9F861C16837C83AE77CD1E7DE3D10
+2020-01-11 14:02:01 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 转成的xml形式为:<xml><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[yIADaQikqqNNmeVEyglK]]></nonce_str><sign><![CDATA[02F9F861C16837C83AE77CD1E7DE3D10]]></sign><body><![CDATA[]]></body><out_trade_no><![CDATA[fruita0c1dbf7b]]></out_trade_no><total_fee><![CDATA[1]]></total_fee><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><notify_url><![CDATA[http://39.104.138.184:9000/wx/pay_after]]></notify_url><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:02:02 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信支付的反馈信息为:<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[签名错误]]></return_msg></xml>
+2020-01-11 14:02:02 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_code，值是：FAIL
+2020-01-11 14:02:02 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_msg，值是：签名错误
+2020-01-11 14:02:02 [main] ERROR [com.jclz.fruit.wxpay.util.ParseXMLUtils] - 统一下单参数有误，错误原因为:签名错误
+2020-01-11 14:02:02 [main] ERROR [com.jclz.fruit.wxpay.util.WxPayCore] - 服务端请求微信的返回值异常。
+2020-01-11 14:27:08 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信签名是：E985C45F5DEC4DB87882D782144CAAA5
+2020-01-11 14:27:08 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 转成的xml形式为:<xml><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[pbNAv17VyV8UCOsbaSwx]]></nonce_str><sign><![CDATA[E985C45F5DEC4DB87882D782144CAAA5]]></sign><body><![CDATA[]]></body><out_trade_no><![CDATA[fruit64638029a]]></out_trade_no><total_fee><![CDATA[1]]></total_fee><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><notify_url><![CDATA[http://39.104.138.184:9000/wx/pay_after]]></notify_url><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:27:09 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信支付的反馈信息为:<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[签名错误]]></return_msg></xml>
+2020-01-11 14:27:09 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_code，值是：FAIL
+2020-01-11 14:27:09 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_msg，值是：签名错误
+2020-01-11 14:27:09 [main] ERROR [com.jclz.fruit.wxpay.util.ParseXMLUtils] - 统一下单参数有误，错误原因为:签名错误
+2020-01-11 14:27:09 [main] ERROR [com.jclz.fruit.wxpay.util.WxPayCore] - 服务端请求微信的返回值异常。
+2020-01-11 14:33:19 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信签名是：616A6DDBD5F65CA086C32F225C13191B
+2020-01-11 14:33:19 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 转成的xml形式为:<xml><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[n2n9lyKAoZwEthau54PM]]></nonce_str><sign><![CDATA[616A6DDBD5F65CA086C32F225C13191B]]></sign><body><![CDATA[超级果蔬]]></body><out_trade_no><![CDATA[fruit78a83f69f]]></out_trade_no><total_fee><![CDATA[1]]></total_fee><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><notify_url><![CDATA[http://39.104.138.184:9000/wx/pay_after]]></notify_url><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:33:20 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信支付的反馈信息为:<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[签名错误]]></return_msg></xml>
+2020-01-11 14:33:20 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_code，值是：FAIL
+2020-01-11 14:33:20 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_msg，值是：签名错误
+2020-01-11 14:33:20 [main] ERROR [com.jclz.fruit.wxpay.util.ParseXMLUtils] - 统一下单参数有误，错误原因为:签名错误
+2020-01-11 14:33:20 [main] ERROR [com.jclz.fruit.wxpay.util.WxPayCore] - 服务端请求微信的返回值异常。
+2020-01-11 14:35:28 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信签名是：513813CEF57032FDD7A95242E1D9C7EF
+2020-01-11 14:35:28 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 转成的xml形式为:<xml><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[gURtTD2taOvhoCO4qApT]]></nonce_str><sign><![CDATA[513813CEF57032FDD7A95242E1D9C7EF]]></sign><body><![CDATA[超级果蔬]]></body><out_trade_no><![CDATA[fruit3a19111c9]]></out_trade_no><total_fee><![CDATA[1]]></total_fee><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><notify_url><![CDATA[http://39.104.138.184:9000/wx/pay_after]]></notify_url><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:35:30 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信支付的反馈信息为:<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[签名错误]]></return_msg></xml>
+2020-01-11 14:35:30 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_code，值是：FAIL
+2020-01-11 14:35:30 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_msg，值是：签名错误
+2020-01-11 14:35:30 [main] ERROR [com.jclz.fruit.wxpay.util.ParseXMLUtils] - 统一下单参数有误，错误原因为:签名错误
+2020-01-11 14:35:30 [main] ERROR [com.jclz.fruit.wxpay.util.WxPayCore] - 服务端请求微信的返回值异常。
+2020-01-11 14:40:11 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信签名是：16501C0DEE35C1AC2F48F208C76B75F3
+2020-01-11 14:40:11 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 转成的xml形式为:<xml><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[hhTzWVIwLuizGmDc1vbx]]></nonce_str><sign><![CDATA[16501C0DEE35C1AC2F48F208C76B75F3]]></sign><body><![CDATA[超级果蔬]]></body><out_trade_no><![CDATA[fruitd739293dd]]></out_trade_no><total_fee><![CDATA[1]]></total_fee><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><notify_url><![CDATA[http://39.104.138.184:9000/wx/pay_after]]></notify_url><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - 微信支付的反馈信息为:<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[ScTW0wrVE5zm6mTf]]></nonce_str><sign><![CDATA[F2B2C2D4C8CE82F40E34CA46933FC702]]></sign><result_code><![CDATA[SUCCESS]]></result_code><prepay_id><![CDATA[wx111440133888431288420df71695664100]]></prepay_id><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_code，值是：SUCCESS
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：return_msg，值是：OK
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：appid，值是：wx667aa1c419ac544e
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：mch_id，值是：1517969351
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：nonce_str，值是：ScTW0wrVE5zm6mTf
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：sign，值是：F2B2C2D4C8CE82F40E34CA46933FC702
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：result_code，值是：SUCCESS
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：prepay_id，值是：wx111440133888431288420df71695664100
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - 统一下单接口成功返回预支付交易会话标识！
+2020-01-11 14:40:12 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key是：trade_type，值是：APP
+2020-01-11 14:44:03 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - ΢��ǩ���ǣ�9C74104855053F409CB86593EC1EB182
+2020-01-11 14:44:03 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - ת�ɵ�xml��ʽΪ:<xml><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[dXFzsXFRnpAA5mJumh4Z]]></nonce_str><sign><![CDATA[9C74104855053F409CB86593EC1EB182]]></sign><body><![CDATA[��������]]></body><out_trade_no><![CDATA[fruit2b4a2543e]]></out_trade_no><total_fee><![CDATA[1]]></total_fee><spbill_create_ip><![CDATA[127.0.0.1]]></spbill_create_ip><notify_url><![CDATA[http://39.104.138.184:9000/wx/pay_after]]></notify_url><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.WxPayCore] - ΢��֧���ķ�����ϢΪ:<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg><appid><![CDATA[wx667aa1c419ac544e]]></appid><mch_id><![CDATA[1517969351]]></mch_id><nonce_str><![CDATA[IZGXCVcNiQsUHNkO]]></nonce_str><sign><![CDATA[6A5E62C6B5EB6CCED53D644DF3DDF2FB]]></sign><result_code><![CDATA[SUCCESS]]></result_code><prepay_id><![CDATA[wx1114440564058419e55282291334927100]]></prepay_id><trade_type><![CDATA[APP]]></trade_type></xml>
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�return_code��ֵ�ǣ�SUCCESS
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�return_msg��ֵ�ǣ�OK
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�appid��ֵ�ǣ�wx667aa1c419ac544e
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�mch_id��ֵ�ǣ�1517969351
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�nonce_str��ֵ�ǣ�IZGXCVcNiQsUHNkO
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�sign��ֵ�ǣ�6A5E62C6B5EB6CCED53D644DF3DDF2FB
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�result_code��ֵ�ǣ�SUCCESS
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�prepay_id��ֵ�ǣ�wx1114440564058419e55282291334927100
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - ͳһ�µ��ӿڳɹ�����Ԥ֧�����׻Ự��ʶ��
+2020-01-11 14:44:04 [main] INFO  [com.jclz.fruit.wxpay.util.ParseXMLUtils] - key�ǣ�trade_type��ֵ�ǣ�APP
